@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grammar Quiz - H5P Standalone</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" media="all" href="./h5p-standalone-1.3.x/dist/styles/h5p.css" />
+    <script type="text/javascript" src="./h5p-standalone-1.3.x/dist/js/h5p-standalone-main.min.js"></script>
+</head>
+<body>
+    <h1>Grammar Quiz</h1>
+    <div class="h5p-container"></div>
+    
+    <script type="text/javascript">
+        (function($) {
+            $(function() {
+                $('.h5p-container').h5p({
+                    frameJs: './h5p-standalone-1.3.x/dist/js/h5p-standalone-frame.min.js',
+                    frameCss: './h5p-standalone-1.3.x/dist/styles/h5p.css',
+                    h5pContent: './grammar-quiz',
+                    displayOptions: {
+                        frame: true,
+                        copyright: true,
+                        embed: false,
+                        download: false,
+                        icon: true,
+                        export: false
+                    }
+                });
+            });
+        })(H5P.jQuery);
+    </script>
+</body>
+</html>
